@@ -3,10 +3,22 @@ name = "nelo2-logging-handler"
 version = "0.1.0"
 description = ""
 authors = ["ultimatelife"]
+readme = "README.rst"
+homepage = "https://github.com/ultimatelife/nelo2-logging-handler"
+repository = "https://github.com/ultimatelife/nelo2-logging-handler"
+documentation = "https://github.com/ultimatelife/nelo2-logging-handler"
+keywords = ["nelo", "nelo2", "naver", "ncloud", "elsa"]
+classifiers= [
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+]
 
 [tool.poetry.dependencies]
 python = "^3.8.7"
+aiohttp = "^3.7.4"
 httpx = "^0.18.1"
+requests = "^2.25.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
