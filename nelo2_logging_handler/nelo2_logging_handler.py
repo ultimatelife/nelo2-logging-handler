@@ -30,7 +30,7 @@ class Nelo2LoggingHandler(logging.Handler):
         body = {
             'projectName': self.project_name,
             'projectVersion': self.project_version,
-            'body': record.msg,
+            'body': self.format(record),
             'host': self.host,
             'logLevel': record.levelname
         }
@@ -86,7 +86,7 @@ class AsyncNelo2LoggingHandler(logging.Handler):
                 body = {
                     'projectName': self.project_name,
                     'projectVersion': self.project_version,
-                    'body': f'{record.msg} {len(asyncio.all_tasks(self.loop))}',
+                    'body': self.format(record),
                     'host': self.host,
                     'logLevel': record.levelname
                 }

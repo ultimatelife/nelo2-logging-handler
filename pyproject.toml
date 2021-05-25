@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "nelo2-logging-handler"
-version = "0.1.0"
+version = "0.1.3"
 description = ""
 authors = ["ultimatelife"]
 readme = "README.rst"
@@ -17,11 +17,10 @@ classifiers= [
 [tool.poetry.dependencies]
 python = "^3.8.7"
 aiohttp = "^3.7.4"
-httpx = "^0.18.1"
-requests = "^2.25.1"
+requests = "^2.23.0"
 
 [tool.poetry.dev-dependencies]
-pytest = "^5.2"
+pytest = "^6.2.2"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
