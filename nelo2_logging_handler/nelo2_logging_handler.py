@@ -39,7 +39,7 @@ class Nelo2LoggingHandler(logging.Handler):
         try:
             res.raise_for_status()
         except:
-            raise Nelo2Exception(res.text)
+            self.handleError(record)
 
 
 class AsyncNelo2LoggingHandler(logging.Handler):
